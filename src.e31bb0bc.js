@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\howItsMade\\bg320.png":[["bg320.92bfe68a.png","images/howItsMade/bg320.png"],"images/howItsMade/bg320.png"],"./..\\images\\howItsMade\\bg320@2.png":[["bg320@2.6fa044d0.png","images/howItsMade/bg320@2.png"],"images/howItsMade/bg320@2.png"],"./..\\images\\howItsMade\\bg1200.png":[["bg1200.d7a21d3a.png","images/howItsMade/bg1200.png"],"images/howItsMade/bg1200.png"],"./..\\images\\howItsMade\\bg1200@2.png":[["bg1200@2.db6434a3.png","images/howItsMade/bg1200@2.png"],"images/howItsMade/bg1200@2.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\howItsMade\\bg320.png":[["bg320.92bfe68a.png","images/howItsMade/bg320.png"],"images/howItsMade/bg320.png"],"./..\\images\\howItsMade\\bg320@2.png":[["bg320@2.6fa044d0.png","images/howItsMade/bg320@2.png"],"images/howItsMade/bg320@2.png"],"./..\\images\\howItsMade\\bg1200.png":[["bg1200.d7a21d3a.png","images/howItsMade/bg1200.png"],"images/howItsMade/bg1200.png"],"./..\\images\\howItsMade\\bg1200@2.png":[["bg1200@2.db6434a3.png","images/howItsMade/bg1200@2.png"],"images/howItsMade/bg1200@2.png"],"./..\\images\\coments\\home.svg":[["home.f037f50e.svg","images/coments/home.svg"],"images/coments/home.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49626" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56183" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
