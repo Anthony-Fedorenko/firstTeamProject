@@ -184,16 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\images\\howItsMade\\bg320.png":[["bg320.92bfe68a.png","images/howItsMade/bg320.png"],"images/howItsMade/bg320.png"],"./..\\images\\howItsMade\\bg320@2.png":[["bg320@2.6fa044d0.png","images/howItsMade/bg320@2.png"],"images/howItsMade/bg320@2.png"],"./..\\images\\howItsMade\\bg1200.png":[["bg1200.d7a21d3a.png","images/howItsMade/bg1200.png"],"images/howItsMade/bg1200.png"],"./..\\images\\howItsMade\\bg1200@2.png":[["bg1200@2.db6434a3.png","images/howItsMade/bg1200@2.png"],"images/howItsMade/bg1200@2.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -397,5 +388,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/index.js.map
