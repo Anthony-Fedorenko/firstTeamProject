@@ -29,9 +29,14 @@
 .boxes-list {
     list-style: none;
     padding-left: 0;
+    padding-bottom: 34px;
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
+        padding-bottom: 81px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 84px;
     }
     .boxes-location-description,
     .boxes-address-item {
@@ -65,6 +70,9 @@
     border-radius: 24px;
     padding: 43px 21px 43px 20px;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
     .boxes-card-list {
         padding: 0;
     }
@@ -101,7 +109,6 @@
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #E1E1E1;
-    }
     @media screen and (min-width: 768px) {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -110,12 +117,35 @@
         padding-top: 32px;
         padding-bottom: 32px;
     }
+}
+
+.boxes-location-title {
+    @media screen and (min-width: 768px) {
+        padding-bottom: 14px;
+    }
+    @media screen and (max-width: 767px), (min-width: 1280px) {
+        padding-bottom: 10px;
+    }
+}
+
 
 .boxes-card-address {
     padding-top: 25px;
     a {
         text-decoration: none;
         color: #907E82;
+        }
+    }
+}
+
+.boxes-openhours-title {
+    &.weekend {
+    padding-top: 10px;
+        @media screen and (min-width: 768px) {
+        padding-top: 16px;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-top: 15px;
         }
     }
 }
