@@ -1,13 +1,32 @@
 @import './styleDefoult/mixin';
 .footer{
-    
+    margin-top: -10px;
+    position: relative;
     background-color: #fff5f6;
+    &::after{
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 90px;
+        width: 100%;
+        height: 1px;
+        background-color: #E1E1E1;
+    
+    }
 }
 .footer-container {
     @include container();
-    
     background-color: #fff5f6;
-  
+    padding-top: 110px;
+    padding-bottom: 25px;
+    @media screen and (min-width: 768px){
+        padding-top: 0px;
+        .footer-icon{
+            width: 34px;
+            height: 34px;
+        }
+    }
    
 }
 .common{
@@ -16,6 +35,7 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        margin-bottom:120px ;
     }
 
     @media screen and (min-width: 1280px) {
@@ -98,6 +118,7 @@
 
     @media screen and (min-width: 1280px) {
         justify-content: flex-end;
+        
     }
 }
 .footer-list{
@@ -110,6 +131,7 @@
    margin-bottom: 23px;
 
    @media screen and (min-width: 1280px) {
+   
       &:hover,
       &:focus{
          color: #d41443;
@@ -123,7 +145,7 @@
    justify-content: center;
    padding-left: 145px;
    background-color: #fff5f6;
-
+    margin-top: 40px;
    @media screen and (min-width: 768px) {
 
        display: flex;
@@ -148,17 +170,7 @@
     height: 32px;
     border-radius: 50%;
      margin-right: 25px;
-
-      @media screen and (min-width: 768px) {
-          width: 20px;
-          height: 20px;
-
-      }
-      @media screen and (min-width: 1280px) {
-
-          width: 34px;
-          height: 34px;
-      }
+     
 }
 .footer-contact-container {
     @media screen and (min-width: 768px) {
@@ -175,7 +187,8 @@
     }
 }
 .footer-pointer {
-    
+    margin-top: 45px;
+    margin-bottom:65px;
     width: 230px;
 
     font-family: Dm sans;
@@ -190,7 +203,7 @@
         
         width: 268px;
         font-size: 14px;
-        
+        margin-right:40px ;
     }
     @media screen and (min-width: 1280px) {
        
@@ -233,6 +246,7 @@
  }
 .footer-logo{
 width: 149px;
+margin-top: 40px;
 font-family: Dm sans;
 font-weight: bold;
 font-size: 14px;
@@ -240,14 +254,14 @@ text-align: center;
 color: #907E82;
 padding-left: 55px;
 background-color: #fff5f6;
-border-top: 1px solid #1e1e1e;
 
  @media screen and (min-width: 768px) {
+     margin: 0 auto;
      width: 276px;
      font-size: 14px;
      letter-spacing: 0,02em;
      text-align: right;
-     margin-left: 250px;
+    
  }
 
  }
