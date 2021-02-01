@@ -262,6 +262,10 @@ body {
     margin-bottom: 112px;
   }
 }
+.hero-a {
+  color: unset;
+  text-decoration: none;
+}
 .hero-images {
   list-style: none;
   margin: unset;
@@ -1472,11 +1476,18 @@ ul {
 .boxes-list {
   list-style: none;
   padding-left: 0;
+  padding-bottom: 34px;
 }
 @media screen and (min-width: 768px) {
   .boxes-list {
     display: flex;
     justify-content: center;
+    padding-bottom: 81px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .boxes-list {
+    padding-bottom: 84px;
   }
 }
 .boxes-list .boxes-location-description,
@@ -1512,6 +1523,11 @@ ul {
   padding: 43px 21px 43px 20px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .boxes-list .boxes-card-info {
+    margin-bottom: 0;
+  }
+}
 .boxes-list .boxes-card-info .boxes-card-list {
   padding: 0;
 }
@@ -1542,15 +1558,27 @@ ul {
   border-bottom: 1px solid #E1E1E1;
 }
 @media screen and (min-width: 768px) {
-  .boxes-list {
+  .boxes-list .boxes-card-location,
+.boxes-list .boxes-card-openhours {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .boxes-list {
+  .boxes-list .boxes-card-location,
+.boxes-list .boxes-card-openhours {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .boxes-list .boxes-location-title {
+    padding-bottom: 14px;
+  }
+}
+@media screen and (max-width: 767px), (min-width: 1280px) {
+  .boxes-list .boxes-location-title {
+    padding-bottom: 10px;
   }
 }
 .boxes-list .boxes-card-address {
@@ -1559,6 +1587,20 @@ ul {
 .boxes-list .boxes-card-address a {
   text-decoration: none;
   color: #907E82;
+}
+
+.boxes-openhours-title.weekend {
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .boxes-openhours-title.weekend {
+    padding-top: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .boxes-openhours-title.weekend {
+    padding-top: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1707,7 +1749,6 @@ ul {
   font-size: 18px;
   line-height: 1.18;
   text-transform: uppercase;
-  margin-top: 40px;
 }
 @media screen and (min-width: 768px) {
   .footer-title {
@@ -1883,7 +1924,6 @@ ul {
 }
 
 .footer-logo {
-  position: absolute;
   width: 149px;
   font-family: Dm sans;
   font-weight: bold;
