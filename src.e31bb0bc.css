@@ -1424,7 +1424,17 @@ ul {
 }
 
 .boxes {
-  background-color: #FFF5F6;
+  background: linear-gradient(to top, #FFF5F6 94%, #FFF 94%);
+}
+@media screen and (min-width: 768px) {
+  .boxes {
+    background: linear-gradient(to top, #FFF5F6 92%, #FFF 92%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .boxes {
+    background: linear-gradient(to top, #FFF5F6 88%, #FFF 88%);
+  }
 }
 
 .boxes-container {
@@ -1511,6 +1521,9 @@ ul {
   }
 }
 @media screen and (min-width: 1280px) {
+  .boxes-list .boxes-card {
+    width: 330px;
+  }
   .boxes-list .boxes-card:not(:last-child) {
     margin-right: 30px;
   }
@@ -1525,7 +1538,15 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .boxes-list .boxes-card-info {
+    padding: 50px 32px 50px 31px;
     margin-bottom: 0;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .boxes-list .boxes-card-info {
+    padding: 51px 44px 62px 44px;
+    font-size: 16px;
   }
 }
 .boxes-list .boxes-card-info .boxes-card-list {
@@ -1550,6 +1571,11 @@ ul {
 }
 .boxes-list .boxes-card-name.name-foodtruck {
   background-color: #C2E297;
+}
+@media screen and (min-width: 768px) {
+  .boxes-list .boxes-card-name {
+    font-size: 16px;
+  }
 }
 .boxes-list .boxes-card-location,
 .boxes-list .boxes-card-openhours {
@@ -1626,8 +1652,8 @@ ul {
 .boxes-button.button-locations {
   width: 161.45px;
   height: 44px;
-  color: #FFFFFF;
-  background: #D41342;
+  color: #D41342;
+  background: #FFFFFF;
 }
 @media screen and (min-width: 768px) {
   .boxes-button.button-locations {
@@ -1651,8 +1677,8 @@ ul {
   }
 }
 .boxes-button.button-locations:hover, .boxes-button.button-locations:focus {
-  background: #FFFFFF;
-  color: #D41342;
+  background: #D41342;
+  color: #FFFFFF;
 }
 .boxes-button.button-franchise {
   width: 160px;
