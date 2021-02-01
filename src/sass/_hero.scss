@@ -15,6 +15,10 @@
         margin-bottom: 112px;
                       }
         }
+        &-a{
+            color: unset;
+     text-decoration: none;
+        }
         &-images{
             list-style: none;
             margin: unset;
@@ -80,6 +84,7 @@
             width: 293px;
             height: 232px;}
                        }
+        
     &-products, &-made{
           padding: unset;
           border: unset;
