@@ -1,8 +1,18 @@
 @import './styleDefoult/mixin';
 
 .boxes{
-    background-color: #FFF5F6;
-}
+    // background-color: #FFF5F6;
+    background: linear-gradient(to top, #FFF5F6 94%, #FFF 94%);
+    @media screen and (min-width: 768px) {
+        background: linear-gradient(to top, #FFF5F6 92%, #FFF 92%);
+    }
+    @media screen and (min-width: 1280px) {
+        background: linear-gradient(to top, #FFF5F6 88%, #FFF 88%);
+    }
+        }
+
+
+
 .boxes-container {
     @include container();
     // padding-bottom: ;
@@ -12,7 +22,6 @@
     a {
         text-decoration: none;
     }
-
     @media screen and (min-width: 768px) {
         padding-bottom: 158px;
     }
@@ -57,7 +66,9 @@
         }
     }
     @media screen and (min-width: 1280px) {
+        width: 330px;
         &:not(:last-child) {
+
             margin-right: 30px;
         }
     }
@@ -71,7 +82,13 @@
     padding: 43px 21px 43px 20px;
     margin-bottom: 20px;
     @media screen and (min-width: 768px) {
+        padding: 50px 32px 50px 31px;
         margin-bottom: 0;
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 51px 44px 62px 44px;
+        font-size: 16px;
     }
     .boxes-card-list {
         padding: 0;
@@ -101,6 +118,9 @@
     }
     &.name-foodtruck {
         background-color: #C2E297;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
     }
 }
 
@@ -172,8 +192,8 @@
     &.button-locations {
         width: 161.45px;
         height: 44px;
-        color: #FFFFFF;
-        background: #D41342;
+        color: #D41342;
+        background: #FFFFFF;
         @media screen and (min-width: 768px) {
             width: 191.45px;
             margin: 0;
@@ -191,8 +211,8 @@
         }
     &:hover,
     &:focus {
-        background: #FFFFFF;
-        color: #D41342;
+        background: #D41342;
+        color: #FFFFFF;
     }
     }
     &.button-franchise {
