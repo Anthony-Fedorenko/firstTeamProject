@@ -7,6 +7,13 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+button:hover,
+.discription-btn:hover,
+.discription-btn:hover,
+.header-button:hover {
+  cursor: pointer;
+}
+
 .header-container {
   margin-left: auto;
   margin-right: auto;
@@ -249,6 +256,13 @@ body {
 .header-buttons {
   display: flex;
   align-items: center;
+}
+
+button:hover,
+.discription-btn:hover,
+.discription-btn:hover,
+.header-button:hover {
+  cursor: pointer;
 }
 
 .hero {
@@ -613,6 +627,13 @@ body {
   }
 }
 
+button:hover,
+.discription-btn:hover,
+.discription-btn:hover,
+.header-button:hover {
+  cursor: pointer;
+}
+
 .products {
   background-color: #ffffff;
   width: 100%;
@@ -908,6 +929,13 @@ body {
   fill: #d41443;
 }
 
+button:hover,
+.discription-btn:hover,
+.discription-btn:hover,
+.header-button:hover {
+  cursor: pointer;
+}
+
 p, h1, h2, h3 {
   margin: 0;
   padding: 0;
@@ -1192,6 +1220,13 @@ p.made-discription-second {
   }
 }
 
+button:hover,
+.discription-btn:hover,
+.discription-btn:hover,
+.header-button:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .images {
     background: linear-gradient(to top, #FFF 35%, #FFF5F6 40%);
@@ -1229,6 +1264,13 @@ p.made-discription-second {
     height: 430px;
     max-width: 1280px;
   }
+}
+
+button:hover,
+.discription-btn:hover,
+.discription-btn:hover,
+.header-button:hover {
+  cursor: pointer;
 }
 
 /*.coments{
@@ -1453,6 +1495,13 @@ ul {
   border-radius: 0%;
   width: 13px;
   height: 12px;
+}
+
+button:hover,
+.discription-btn:hover,
+.discription-btn:hover,
+.header-button:hover {
+  cursor: pointer;
 }
 
 .boxes {
@@ -1747,6 +1796,13 @@ ul {
   color: #FFFFFF;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover,
+.discription-btn:hover,
+.discription-btn:hover,
+.header-button:hover {
+  cursor: pointer;
 }
 
 .footer {
