@@ -213,6 +213,8 @@
     &:focus {
         background: #D41342;
         color: #FFFFFF;
+        transition-duration: 400ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     }
     &.button-franchise {
@@ -238,5 +240,7 @@
     &:focus {
         background: #D41443;
         color: #FFFFFF;
+        transition-duration: 400ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
