@@ -12,7 +12,9 @@
         }
      @media screen and (min-width: 1280px) {  
      padding-bottom: 89px;
-     padding-left: 47px;}
+     padding-left: 47px;
+     position: relative;
+}
 }
 .header{
      background-color: #FFB8CA;
@@ -34,8 +36,9 @@
                display: flex;
                font-size: 16px;
                line-height: 1.31;
-               width: 542px;
-               margin-right: 110px;
+               position: absolute;
+               top: 50px;
+               left: -675px;
            }
      }
      &-buy{
@@ -87,8 +90,8 @@
           background: #E17992;
           @media screen and (min-width: 768px) {
                width: 254px;
-               top: -42px;
-               right: -35px
+               top: 0;
+               right: 0;
                   }
           &.is-open{
               display: block;
@@ -97,7 +100,7 @@
                   }
                }
                @media screen and (min-width: 1280px) {
-                    display: contents;
+                    display: block;
                     background: unset;
 
                        }
@@ -109,20 +112,16 @@
           width: 20px;
           height: 12px;
           z-index: 3;
+          top: 25px;
+          right: 20px;
+          @media screen and (min-width: 768px) {
+               margin-right: 23px;
+             }
+          &.is-open {
           position: absolute;
           top: 25px;
           right: 20px;
-          @media screen and (min-width: 768px) {
-               top: 14px;
-               right: 180px;
-             }
-          &.is-open {
-          top: 25px;
-          right: 20px;
-          @media screen and (min-width: 768px) {
-               top: -15px;
-               right: -15px;
-             }
+          margin: unset;
           }
           & .header-close {
                display: none;
@@ -173,6 +172,7 @@
      padding: 10px 55px 10px 37px;
      border-radius: 22px;
      background-color: #fff;
+     z-index: 1;
      &:focus, &:hover{
           background: #ECEBEB;
           transition-duration: 300ms;
@@ -190,9 +190,5 @@
      &-buttons{
           display: flex;
           align-items: center;
-          @media screen and (min-width: 768px) {
-          z-index: 1;
-          position: relative;
-             }
      }
 }
