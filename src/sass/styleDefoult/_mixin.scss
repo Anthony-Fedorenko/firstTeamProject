@@ -30,3 +30,12 @@
         // background-color: orange;
     }
 }
+button,
+.discription-btn,
+.discription-btn,
+.header-button
+{
+&:hover{
+    cursor: pointer;
+}
+}
