@@ -23,6 +23,12 @@ body {
     max-width: 600px;
   }
 }
+@media screen and (max-width: 325px) {
+  .header-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-container {
     padding-left: 35px;
@@ -41,7 +47,6 @@ body {
   .header-container {
     padding-top: 37px;
     padding-bottom: 15px;
-    position: relative;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -53,6 +58,7 @@ body {
 
 .header {
   background-color: #FFB8CA;
+  position: relative;
 }
 .header-logo {
   width: 199px;
@@ -125,14 +131,14 @@ body {
   top: 0;
   right: 0;
   width: 250px;
-  height: 502px;
+  height: 100vh;
   background: #E17992;
 }
 @media screen and (min-width: 768px) {
   .header-menu-container {
-    right: 165px;
     width: 254px;
-    height: 358px;
+    top: -42px;
+    right: -35px;
   }
 }
 .header-menu-container.is-open {
@@ -150,16 +156,30 @@ body {
   }
 }
 .header-burger {
-  z-index: 3;
   padding: unset;
   border: unset;
   background-color: unset;
   width: 20px;
   height: 12px;
+  z-index: 3;
+  position: absolute;
+  top: 25px;
+  right: 20px;
 }
 @media screen and (min-width: 768px) {
   .header-burger {
-    margin-right: 30px;
+    top: 14px;
+    right: 180px;
+  }
+}
+.header-burger.is-open {
+  top: 25px;
+  right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .header-burger.is-open {
+    top: -15px;
+    right: -15px;
   }
 }
 .header-burger .header-close {
@@ -167,7 +187,6 @@ body {
 }
 .header-burger.is-open .header-close {
   display: block;
-  margin-top: 15px;
 }
 .header-burger.is-open .header-menu {
   display: none;
@@ -236,8 +255,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header-buttons {
-    position: relative;
     z-index: 1;
+    position: relative;
   }
 }
 
@@ -313,16 +332,16 @@ body {
   .hero-jug {
     display: block;
     position: absolute;
-    top: 245px;
-    left: 34px;
+    bottom: -5px;
+    right: 113px;
     width: 124px;
     height: 126px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-jug {
-    top: 435px;
-    left: 77px;
+    bottom: -10px;
+    right: 233px;
     width: 188px;
     height: 191px;
   }
@@ -371,7 +390,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero-milk {
-    display: block;
+    display: inline-block;
+    position: relative;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -384,6 +404,8 @@ body {
   background-color: white;
   border-radius: 20px;
   fill: #D41443;
+  height: 18px;
+  width: 18px;
 }
 @media screen and (min-width: 1280px) {
   .hero-button {
@@ -462,7 +484,6 @@ body {
   color: #D41443;
   margin: unset;
   position: relative;
-  z-index: 1;
 }
 @media screen and (min-width: 1280px) {
   .hero-numeric {
@@ -569,6 +590,12 @@ body {
     max-width: 600px;
   }
 }
+@media screen and (max-width: 325px) {
+  .hero .hero-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero .hero-container {
     padding-left: 35px;
@@ -613,6 +640,12 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     max-width: 600px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .products-container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -932,6 +965,12 @@ p, h1, h2, h3 {
     max-width: 600px;
   }
 }
+@media screen and (max-width: 325px) {
+  .made-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .made-container {
     padding-left: 35px;
@@ -1075,6 +1114,8 @@ p, h1, h2, h3 {
 }
 .made-discription-text .discription-btn:hover, .made-discription-text .discription-btn:active {
   background-color: #ECEBEB;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .made-discription-text .discription-btn {
@@ -1448,6 +1489,12 @@ ul {
     max-width: 600px;
   }
 }
+@media screen and (max-width: 325px) {
+  .boxes-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .boxes-container {
     padding-left: 35px;
@@ -1679,6 +1726,8 @@ ul {
 .boxes-button.button-locations:hover, .boxes-button.button-locations:focus {
   background: #D41342;
   color: #FFFFFF;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .boxes-button.button-franchise {
   width: 160px;
@@ -1705,6 +1754,8 @@ ul {
 .boxes-button:hover, .boxes-button:focus {
   background: #D41443;
   color: #FFFFFF;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -1735,6 +1786,12 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
     max-width: 600px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .footer-container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (min-width: 768px) {
