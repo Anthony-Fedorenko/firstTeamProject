@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"epB2":[function(require,module,exports) {
 "use strict";var e=u(require("./modules/_upPageAndscroll"));function u(e){return e&&e.__esModule?e:{default:e}}(0,e.default)(".pageup");
 },{"./modules/_upPageAndscroll":"Eejd"}]},{},["epB2"], null)
-//# sourceMappingURL=/firstTeamProjectBlended29/main.6c845443.js.map
+//# sourceMappingURL=/firstTeamProject/main.6c845443.js.map
